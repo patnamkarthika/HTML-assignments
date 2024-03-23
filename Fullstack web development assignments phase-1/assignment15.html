@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Preferences Form</title>
+</head>
+<body>
+    <h2>User Preferences</h2>
+    <form action="submit_preferences.php" method="post">
+        <h3>Checkbox Options:</h3>
+        <input type="checkbox" id="option1" name="options[]" value="Option 1">
+        <label for="option1">Option 1</label><br>
+        <input type="checkbox" id="option2" name="options[]" value="Option 2">
+        <label for="option2">Option 2</label><br>
+        <input type="checkbox" id="option3" name="options[]" value="Option 3">
+        <label for="option3">Option 3</label><br>
+        
+        <h3>Dropdown Menu:</h3>
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="Option A">Option A</option>
+            <option value="Option B">Option B</option>
+            <option value="Option C">Option C</option>
+        </select><br><br>
+
+        <!-- Image with Alt text for accessibility -->
+        <img src="checkboxes.jpg" alt="Checkboxes representing options" width="200"><br><br>
+        
+        <!-- Image with Alt text for accessibility -->
+        <img src="dropdown_menu.jpg" alt="Dropdown menu for selecting options" width="200"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

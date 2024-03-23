@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Preferences Form</title>
+</head>
+<body>
+    <header>
+        <h1>User Preferences</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#checkbox-options">Checkbox Options</a></li>
+            <li><a href="#dropdown-menu">Dropdown Menu</a></li>
+            <li><a href="https://www.example.com" target="_blank">External Website</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2 id="checkbox-options">Checkbox Options:</h2>
+            <form action="submit_preferences.php" method="post">
+                <section>
+                    <input type="checkbox" id="option1" name="options[]" value="Option 1">
+                    <label for="option1">Option 1</label><br>
+                </section>
+                <section>
+                    <input type="checkbox" id="option2" name="options[]" value="Option 2">
+                    <label for="option2">Option 2</label><br>
+                </section>
+                <section>
+                    <input type="checkbox" id="option3" name="options[]" value="Option 3">
+                    <label for="option3">Option 3</label><br>
+                </section>
+            </form>
+        </article>
+
+        <article>
+            <h2 id="dropdown-menu">Dropdown Menu:</h2>
+            <form action="submit_preferences.php" method="post">
+                <section>
+                    <label for="dropdown">Select an option:</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="Option A">Option A</option>
+                        <option value="Option B">Option B</option>
+                        <option value="Option C">Option C</option>
+                    </select><br><br>
+                </section>
+            </form>
+        </article>
+
+        <footer>
+            <p>&copy; 2024 User Preferences Form. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
